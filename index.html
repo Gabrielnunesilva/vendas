@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Compras</h1>
+        <div class="produto">
+            <div class="produto-nome">Açai (R$10):</div>
+            <div class="controles">
+                <button onclick="alterarQtd('acai', -1)">-</button>
+                <span id="qtd-acai">0</span>
+                <button onclick="alterarQtd('acai', 1)">+</button>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="produto-nome">Lanche (R$10):</div>
+            <div class="controles">
+                <button onclick="alterarQtd('lanche', -1)">-</button>
+                <span id="qtd-lanche">0</span>
+                <button onclick="alterarQtd('lanche', 1)">+</button>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="produto-nome">Suco (R$2):</div>
+            <div class="controles">
+                <button onclick="alterarQtd('suco', -1)">-</button>
+                <span id="qtd-suco">0</span>
+                <button onclick="alterarQtd('suco', 1)">+</button>
+            </div>
+        </div>
+        <div class="total">
+            Total: R$<span id="total">0</span>
+        </div>
+        <button class="resetar" onclick="resetar()">Resetar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
