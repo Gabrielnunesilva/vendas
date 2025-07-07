@@ -176,13 +176,14 @@ button.salvarVenda:hover {
 
 /* Inputs lado a lado */
 #config-form input.nome-produto {
-    flex: 2;
+    flex: 3;
     padding: 6px 8px;
     font-size: 14px;
 }
 
 #config-form input.preco-produto {
     flex: 1;
+    max-width: 80px;
     padding: 6px 8px;
     font-size: 14px;
 }
