@@ -24,6 +24,7 @@ Inicialmente é necessário clicar no botão de Configurações ⚙️, no canto
 
 ## Venda
 1- Clique no botão adicionar (+) para adicionar um produto que será vendido, ou aumentar a quantidade.
+<br />
 2- Quando tiver selecionado todos os produtos vendidos, clique em Salvar.
 
 <br />
