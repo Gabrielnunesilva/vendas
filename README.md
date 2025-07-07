@@ -1,4 +1,4 @@
-# Registradora de Vendas
+# Registrador de Vendas
 
 ## Descrição do projeto:
 
