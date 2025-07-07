@@ -1,15 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Compras</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Calculadora de Compras</h1>
+        <h1>Calculadora de Venda</h1>
         <div class="produto">
             <div class="produto-nome">Açai (R$10):</div>
             <div class="controles">
@@ -37,8 +38,43 @@
         <div class="total">
             Total: R$<span id="total">0</span>
         </div>
-        <button class="resetar" onclick="resetar()">Resetar</button>
+        <button class="salvarVenda" onclick="salvarVenda()">Salvar</button>
+
     </div>
+    </div>
+    <div class="top-buttons">
+        <button id="historico-btn">📄</button>
+        <button id="config-btn">⚙️</button>
+    </div>
+
+
+    <div id="config-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Configurações</h2>
+            <div id="config-form"></div>
+            <button id="add-produto">+ Adicionar Produto</button>
+            <div class="modal-actions">
+                <button onclick="salvarConfiguracoes()">Salvar</button>
+                <button onclick="fecharModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div id="historico-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Histórico de Vendas</h2>
+            <div id="historico-conteudo"></div>
+            <div class="modal-actions">
+                <button onclick="resetarHistorico()" style="background-color: red; color: white;">🗑️ Resetar
+                    Histórico</button>
+                <button onclick="fecharHistorico()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
