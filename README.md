@@ -1,4 +1,4 @@
-# Calculadora de Vendas
+# Registradora de Vendas
 
 ## Descrição do projeto:
 
